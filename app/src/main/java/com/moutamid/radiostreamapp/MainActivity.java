@@ -1,6 +1,8 @@
 package com.moutamid.radiostreamapp;
 
+import android.content.Intent;
 import android.media.AudioManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -17,6 +19,8 @@ import com.google.android.exoplayer2.PlaybackException;
 import com.google.android.exoplayer2.Player;
 import com.google.android.material.slider.Slider;
 import com.moutamid.radiostreamapp.databinding.ActivityMainBinding;
+
+import java.net.URI;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -53,6 +57,8 @@ public class MainActivity extends AppCompatActivity {
                 player.play();
             }
         });
+
+        binding.link.setOnClickListener(v -> startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com"))));
     }
 
     private void setupVolumeControl() {
@@ -94,24 +100,24 @@ public class MainActivity extends AppCompatActivity {
             player.addListener(new Player.Listener() {
                 @Override
                 public void onPlaybackStateChanged(int playbackState) {
-                    switch (playbackState) {
-                        case Player.STATE_READY:
-                            // Player is ready to start playing
-                            Toast.makeText(MainActivity.this, "Player is ready", Toast.LENGTH_SHORT).show();
-                            break;
-                        case Player.STATE_ENDED:
-                            // Player finished playing the media
-                            Toast.makeText(MainActivity.this, "Playback finished", Toast.LENGTH_SHORT).show();
-                            break;
-                        case Player.STATE_BUFFERING:
-                            // Player is buffering
-                            Toast.makeText(MainActivity.this, "Buffering...", Toast.LENGTH_SHORT).show();
-                            break;
-                        case Player.STATE_IDLE:
-                            // Player is idle and not ready
-                            Toast.makeText(MainActivity.this, "Player is idle", Toast.LENGTH_SHORT).show();
-                            break;
-                    }
+//                    switch (playbackState) {
+//                        case Player.STATE_READY:
+//                            // Player is ready to start playing
+//                            Toast.makeText(MainActivity.this, "Player is ready", Toast.LENGTH_SHORT).show();
+//                            break;
+//                        case Player.STATE_ENDED:
+//                            // Player finished playing the media
+//                            Toast.makeText(MainActivity.this, "Playback finished", Toast.LENGTH_SHORT).show();
+//                            break;
+//                        case Player.STATE_BUFFERING:
+//                            // Player is buffering
+//                            Toast.makeText(MainActivity.this, "Buffering...", Toast.LENGTH_SHORT).show();
+//                            break;
+//                        case Player.STATE_IDLE:
+//                            // Player is idle and not ready
+//                            Toast.makeText(MainActivity.this, "Player is idle", Toast.LENGTH_SHORT).show();
+//                            break;
+//                    }
                 }
 
                 @Override
@@ -122,13 +128,13 @@ public class MainActivity extends AppCompatActivity {
 
                 @Override
                 public void onIsPlayingChanged(boolean isPlaying) {
-                    if (isPlaying) {
-                        // Player has started playing
-                        Toast.makeText(MainActivity.this, "Playback started", Toast.LENGTH_SHORT).show();
-                    } else {
-                        // Player is paused or stopped
-                        Toast.makeText(MainActivity.this, "Playback paused/stopped", Toast.LENGTH_SHORT).show();
-                    }
+//                    if (isPlaying) {
+//                        // Player has started playing
+//                        Toast.makeText(MainActivity.this, "Playback started", Toast.LENGTH_SHORT).show();
+//                    } else {
+//                        // Player is paused or stopped
+//                        Toast.makeText(MainActivity.this, "Playback paused/stopped", Toast.LENGTH_SHORT).show();
+//                    }
                 }
             });
             setupVolumeControl();
