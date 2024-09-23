@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Radio Stream App</string>
+    <string name="app_name">Golden Days Radio</string>
+    <string name="website">https://goldendaysradio.com</string>
 </resources>

@@ -12,7 +12,7 @@ android {
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
-        setProperty("archivesBaseName", "RadioStreamApp-$versionName")
+        setProperty("archivesBaseName", "GoldenDaysRadio-$versionName")
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     buildFeatures { viewBinding = true }
