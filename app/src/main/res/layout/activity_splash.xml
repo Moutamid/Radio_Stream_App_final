@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="@drawable/background"
     tools:context=".SplashActivity">
 
     <TextView
@@ -15,8 +15,10 @@
         android:padding="12dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:gravity="center"
         android:layout_margin="15dp"
-        android:text="@string/app_name"
+        android:fontFamily="@font/aclonica"
+        android:text="Golden Days\nRadio"
         android:textSize="26sp" />
 
     <com.google.android.material.card.MaterialCardView
@@ -24,27 +26,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/heading"
+        android:layout_above="@id/name"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
         app:cardCornerRadius="12dp"
         app:cardElevation="6dp"
+        app:cardBackgroundColor="#211F20"
         app:strokeWidth="0dp">
 
         <ImageView
             android:layout_width="300dp"
-            android:layout_height="350dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/logo" />
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/img" />
 
     </com.google.android.material.card.MaterialCardView>
 
     <TextView
+        android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="12dp"
-        android:layout_below="@id/logo"
+        android:layout_above="@id/link"
         android:layout_centerHorizontal="true"
-        android:layout_margin="15dp"
         android:text="GDR"
         android:fontFamily="@font/aclonica"
         android:textSize="26sp" />
@@ -54,9 +57,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="12dp"
+        android:textColor="@color/black"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="15dp"
+        android:textStyle="bold"
         android:text="@string/website"
         android:textSize="16sp" />
 

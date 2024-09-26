@@ -1,12 +1,12 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.RadioStreamApp" parent="Theme.Material3.Light.NoActionBar">
-        <item name="colorPrimary">@color/blueDark</item>
-        <item name="colorPrimaryVariant">@color/blueDark</item>
+        <item name="colorPrimary">@color/golden</item>
+        <item name="colorPrimaryVariant">@color/golden</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/greenDark</item>
-        <item name="colorSecondaryVariant">@color/greenDark</item>
+        <item name="colorSecondary">@color/golden</item>
+        <item name="colorSecondaryVariant">@color/golden</item>
         <item name="colorOnSecondary">@color/white</item>
         <!--  Font Family -->
         <item name="android:fontFamily">@font/poppins</item>
@@ -14,6 +14,7 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">@color/background</item>
         <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowDisablePreview">true</item>
     </style>
 
