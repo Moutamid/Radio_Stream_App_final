@@ -32,9 +32,8 @@
         android:text="Golden Days\nRadio"
         android:gravity="center"
         android:layout_margin="15dp"
-        android:fontFamily="@font/aclonica"
         android:layout_centerHorizontal="true"
-        android:textSize="22sp"
+        android:textSize="26sp"
         android:textStyle="bold" />
 
     <com.google.android.material.card.MaterialCardView
@@ -127,9 +126,8 @@
             android:layout_height="wrap_content"
             android:padding="12dp"
             android:textStyle="bold"
-            android:fontFamily="@font/aclonica"
             android:text="@string/website"
-            android:textSize="13sp" />
+            android:textSize="16sp" />
 
     </LinearLayout>
 

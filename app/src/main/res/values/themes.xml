@@ -9,7 +9,7 @@
         <item name="colorSecondaryVariant">@color/golden</item>
         <item name="colorOnSecondary">@color/white</item>
         <!--  Font Family -->
-        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:fontFamily">@font/montserrat</item>
         <item name="android:textColor">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">@color/background</item>
